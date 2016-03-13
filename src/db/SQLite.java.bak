@@ -1,0 +1,45 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package db;
+
+import java.sql.*;
+import java.util.ArrayList;
+
+/**
+ *
+ * @author Administrator
+ */
+public class SQLite {
+
+    private String dbName;
+    private Connection c;
+
+    public SQLite(String dbName) {
+        Statement stmt = null;
+        try {
+            Class.forName("org.sqlite.JDBC");
+            this.c = DriverManager.getConnection("jdbc:sqlite:" + dbName);
+//            System.out.println("Opened database successfully");
+        } catch (Exception e) {
+            System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            System.exit(0);
+        }
+    }
+
+    public ResultSet displayAll() throws SQLException {
+        Statement stmt = this.c.createStatement();
+        ResultSet rs = stmt.executeQuery("SELECT * FROM playlist");
+        return rs;
+    }
+
+    public void close() {
+        try {
+            this.c.close();
+        } catch (SQLException e) {
+
+        }
+    }
+}

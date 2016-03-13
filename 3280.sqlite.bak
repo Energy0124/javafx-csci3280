@@ -1,0 +1,9 @@
+SQLite format 3~�"id" INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL ,
+"title" VARCHAR NOT NULL DEFAULT "N/A", 
+"singer" VARCHAR DEFAULT "N/A", 
+"album" VARCHAR DEFAULT "N/A", 
+"length" INTEGER NOT NULL ,
+ "lyrics" TEXT DEFAULT "N/A", 
+"path" VARCHAR NOT NULL  UNIQUE 
+)P++Ytablesqlite_sequencesqlite_sequenceCREATE TABLE sqlite_sequence(name,seq)�是不是這樣的夜晚你才會這樣的想起我彭家麗hehehahaN/Aa1234567
+123456	ggggg

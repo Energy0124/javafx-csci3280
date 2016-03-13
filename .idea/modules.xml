@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HumbleVideoTest/HumbleVideoTest.iml" filepath="$PROJECT_DIR$/HumbleVideoTest/HumbleVideoTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XugglerTest/XugglerTest.iml" filepath="$PROJECT_DIR$/XugglerTest/XugglerTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javafx328-v2.iml" filepath="$PROJECT_DIR$/javafx328-v2.iml" />
+    </modules>
+  </component>
+</project>
